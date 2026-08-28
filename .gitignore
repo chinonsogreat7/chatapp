@@ -31,7 +31,22 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+.env
+.env.*
+!.env.example
+
+# credentials and signing
+credentials.json
+*.keystore
+
+# packaged native builds
+*.apk
+*.aab
+*.ipa
+*.xcarchive
+
+# test output
+coverage/
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +54,7 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
